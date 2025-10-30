@@ -1,19 +1,11 @@
-﻿try
+﻿//laba 1 (стр 44-49)
+try
 {
-    Console.Write("Введите A: ");
-    int A = int.Parse(Console.ReadLine());
-    Console.Write("Введите B: ");
-    int B = int.Parse(Console.ReadLine());
-    int count = 0;
-    Console.WriteLine("Числа между A и B в порядке убывания:");
-        for (int i = B - 1; i > A; i--)
-    {
-        Console.WriteLine(i);
-        count++;
-    }
-    Console.WriteLine($"Количество чисел: {count}");
+    for (int i = 2; i <= 100; i ++)
+        if (i%2==0 && i%5==0)
+        Console.WriteLine(i);   
 }
-catch(Exception e)
+catch (Exception e)
 {
     Console.WriteLine(e.Message);
 }
